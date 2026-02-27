@@ -228,4 +228,4 @@ php queue/Worker.php
 - Saves booking to DB
 - Responds OK to Agoda
 
-[http://buymeacoffee.com/hillzacky]
+[buymeacoffee](buymeacoffee.com/hillzacky)
