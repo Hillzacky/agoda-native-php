@@ -99,14 +99,6 @@ echo "Library Loaded OK!";
 ```
 
 ## Core Classes
-
-### Env — load environment variables:
-``` PHP
-require_once 'core/Env.php';
-Env::load(__DIR__ . '/.env');
-$appEnv = Env::get('APP_ENV');
-$dbHost = Env::get('DB_HOST');
-```
 ### Database — PDO singleton:
 ``` PHP
 require_once 'core/Database.php';
@@ -235,3 +227,5 @@ php queue/Worker.php
 - Validates signature
 - Saves booking to DB
 - Responds OK to Agoda
+
+[http://buymeacoffee.com/hillzacky]
