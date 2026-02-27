@@ -1,26 +1,25 @@
 <?php
+require_once __DIR__ . '/../core/Env.php';
 
 return [
-
-    'environment' => 'sandbox',
+    'environment' => Env::get('APP_ENV', 'sandbox'),
 
     'sandbox' => [
         'base_url' => 'https://sandbox-api.agoda.com',
-        'api_key'  => 'SANDBOX_API_KEY',
-        'secret'   => 'SANDBOX_SECRET'
+        'api_key'  => Env::get('AGODA_API_KEY_SANDBOX'),
+        'secret'   => Env::get('AGODA_SECRET_SANDBOX')
     ],
 
     'production' => [
         'base_url' => 'https://api.agoda.com',
-        'api_key'  => 'PROD_API_KEY',
-        'secret'   => 'PROD_SECRET'
+        'api_key'  => Env::get('AGODA_API_KEY_PRODUCTION'),
+        'secret'   => Env::get('AGODA_SECRET_PRODUCTION')
     ],
 
     'database' => [
-        'host' => '127.0.0.1',
-        'name' => 'channel_manager',
-        'user' => 'root',
-        'pass' => ''
+        'host' => Env::get('DB_HOST', '127.0.0.1'),
+        'name' => Env::get('DB_NAME', 'db_agoda'),
+        'user' => Env::get('DB_USER', 'root'),
+        'pass' => Env::get('DB_PASS', '')
     ]
-
 ];
