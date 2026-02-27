@@ -1,12 +1,12 @@
 # agoda-native-php
-### Fully native PHP, no Composer
-### Retry + Signature + Idempotency included
-### Bulk 365-day rate & inventory support
-### Multi-property ready
-### Safe reservation pull & duplicate prevention
-### Queue & worker system for background jobs
-### Cron automation ready
-### Webhook for real-time booking
+- Fully native PHP, no Composer
+- Retry + Signature + Idempotency included
+- Bulk 365-day rate & inventory support
+- Multi-property ready
+- Safe reservation pull & duplicate prevention
+- Queue & worker system for background jobs
+- Cron automation ready
+- Webhook for real-time booking
 
 ## Struktur File
 ```
@@ -226,8 +226,8 @@ require_once 'queue/JobQueue.php';
 JobQueue::push('sync_rate',['property_id'=>1,'base_rate'=>1000000]);
 $job = JobQueue::next();
 ```
-Worker
-``` PHP
+### Worker
+``` Bash
 php queue/Worker.php
 ```
 ### Webhook Receiver
