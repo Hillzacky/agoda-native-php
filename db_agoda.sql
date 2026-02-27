@@ -1,0 +1,7 @@
+CREATE TABLE jobs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(50),
+    payload TEXT,
+    status VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
